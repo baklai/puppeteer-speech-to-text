@@ -1,6 +1,6 @@
 # puppeteer-speech-to-text
 
-```js
+```js(listen.js)
 const puppeteer = require('puppeteer');
 
 const htmlContent =
@@ -70,4 +70,11 @@ export default {
   }
 };
 ```
+
+```js
+import listen from './listen';
+
+const output = await listen.listenSync();
+
+console.log('result: ',output);
 ```
